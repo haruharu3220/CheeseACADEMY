@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+	margin: auto;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*TOP*/
+.top {
+	/*親div*/
+	background: url(../img/mainbg.png);
+	position: relative;
+	/*相対配置*/
+	width: 100%;
+	height: 352px;
+	/*https://www.sejuku.net/blog/83148*/
+	background-size: contain;
+	 margin-top: 80px;
+}
+
+.top img {
+	width: 100%;
+}
+
+.mainTitle {
+	position: absolute;
+	/*絶対配置*/
+	color: white;
+	/*文字は白に*/
+	width: 960px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*left: 50%;*/
+	font-size: 48px;
+	margin: 0;
+	padding-bottom: 40px;
+	text-align: center;
+	font-weight: bold;
+	animation-name: fadeInAnime;
+	animation-duration:3s;
+	opacity: 1; /*不透明度*/
+}
+
+@keyframes fadeInAnime{
+	0% {
+	  opacity: 0;
+	}
+  
+	100% {
+	  opacity: 1;
+	}
+  }
+
+
+.subTitle {
+	position: absolute;
+	/*絶対配置*/
+	color: white;
+	/*文字は白に*/
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 36px;
+	margin: 0;
+	padding: 0;
+	width: 960px;
+	text-align: center;
+	animation-name: fadeInAnime_sub;
+	animation-duration:6s;
+	opacity: 1; /*不透明度*/
+}
+
+@keyframes fadeInAnime_sub{
+	0% {
+	  opacity: 0;
+	}
+
+	30% {
+		opacity: 0;
+	}
+  
+	100% {
+	  opacity: 1;
+	}
+  }

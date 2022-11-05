@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+	margin: auto;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*コンタクト*/
+.contact {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.contact h2 {
+	text-align: center;
+	padding-bottom: 24px;
+}
+
+.contact h3 {
+	text-align: center;
+	padding-bottom: 64px;
+	font-size: 16px;
+}
+
+.contact_intro01 {
+	padding-bottom: 32px;
+}
+
+.contact_intro02 {
+	padding-bottom: 80px;
+}
+
+.contact p {
+	text-align: center;
+}
+
+
+.inquiry {
+	width: 500px;
+	margin: auto;
+}
+
+.name,
+.kana,
+.mail,
+.motive,
+.detail,
+.sex {
+	display: flex;
+}
+
+/*https://forsmile.jp/css/1339/*/
+/*https://www.fabrica-com.co.jp/techblog/technology/2087/*/
+.inquiry dt {
+	/*https://mogablog.work/web/css-float/*/
+	width: 120px;
+}
+
+.inquiry dd {
+	/*https://mogablog.work/web/css-float/*/
+	width: 380px;
+}
+
+
+.nameForm,
+.kanaForm,
+.mailForm,
+.detailForm,
+.sexForm {
+	width: 380px;
+}
+
+.motive input {
+	width: 30px;
+}
+
+input[type="checkbox"] {
+	 display: none; 
+}
+
+input[type="checkbox"]+label {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin: 5px;
+	color: black;
+	cursor: pointer;
+	 /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;  */
+}
+
+input[type="checkbox"]+label:last-child {
+	margin-bottom: 0;
+}
+
+input[type="checkbox"]+label:before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	opacity: .6;
+	-webkit-transition: all .12s, border-color .08s;
+	transition: all .12s, border-color .08s;
+}
+
+.motive input[type="checkbox"]:checked+label:before {
+	width: 10px;
+	top: -5px;
+	left: 5px;
+	border-radius: 0;
+	opacity: 1;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.intro_last {
+	text-align: center;
+	padding-bottom: 64px;
+}
+
+.submit a {
+	border-radius: 3px;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 220px;
+	padding: 10px 25px;
+	color: white;
+	transition: 0.3s ease-in-out;
+	font-weight: 600;
+	background: linear-gradient(270deg, orange 0%, rgba(107, 182, 255, 1) 100%);
+
+}
+
+.submit a:hover {
+	/*マウスカーソルがあるとき*/
+	background: lightsalmon;
+}
+
+
+.fa-solid {
+	text-align: center;
+}
+
+
+.lasticon {
+	text-align: center;
+}

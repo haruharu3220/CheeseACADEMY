@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+	margin: auto;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*ABOUT*/
+
+/* https://qumeru.com/magazine/126 */
+.youtube {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	margin-bottom: 45px;
+}
+
+.about h2 {
+	text-align: center;
+	color: darkorange;
+	font-size: 24px;
+	padding-top: 120px;
+	padding-bottom: 24px;
+	width: 300px;
+	margin: auto;
+	transition: 3s 3s; 
+}
+
+/* マウスオーバーしたら消える */
+.about h2:hover{
+	color: white;
+	transition: 0.5s 0.3s; /*https://developer.mozilla.org/ja/docs/Web/CSS/transition*/
+
+}
+
+.about h3 {
+	text-align: center;
+	font-size: 16px;
+	padding-bottom: 64px;
+	margin: auto;
+	transition: 3s 3s; 
+}
+
+.about h3:hover{
+	color: white;
+	transition: 0.5s 0.3s;
+}
+
+.about_intro {
+	text-align: center;
+	transition: 3s 3s; 
+}
+
+.about_intro:hover {
+	color: white;
+	transition: 0.5s 0.3s;
+}
+
+.about_intro p {
+	padding-bottom: 40px;
+}
+
+
+.slider {
+	/* display: flex; */
+	width: 94%;
+
+	margin: 0 auto;
+}
+
+.slider img {
+	width: 30vw;
+	/*スライダー内の画像を60vwにしてレスポンシブ化*/
+}
+
+.slider .slick-slide {
+	transform: scale(0.8);
+	/*左右の画像のサイズを80%に*/
+	transition: all .5s;
+	/*拡大や透過のアニメーションを0.5秒で行う*/
+	opacity: 0.5;
+	/*透過50%*/
+}
+
+.slider .slick-slide.slick-center {
+	transform: scale(1);
+	/*中央の画像のサイズだけ等倍に*/
+	opacity: 1;
+	/*透過なし*/
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+	position: absolute;
+	/*絶対配置にする*/
+	top: 42%;
+	cursor: pointer;
+	/*マウスカーソルを指マークに*/
+	outline: none;
+	/*クリックをしたら出てくる枠線を消す*/
+	border-top: 2px solid #666;
+	/*矢印の色*/
+	border-right: 2px solid #666;
+	/*矢印の色*/
+	height: 15px;
+	width: 15px;
+}
+
+.slick-prev {
+	/*戻る矢印の位置と形状*/
+	left: -1.5%;
+	transform: rotate(-135deg);
+}
+
+.slick-next {
+	/*次へ矢印の位置と形状*/
+	right: -1.5%;
+	transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.slick-dots button {
+	color: transparent;
+	outline: none;
+	width: 8px;
+	/*ドットボタンのサイズ*/
+	height: 8px;
+	/*ドットボタンのサイズ*/
+	display: block;
+	border-radius: 50%;
+	background: #ccc;
+	/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+	background: #333;
+	/*ドットボタンの現在地表示の色*/
+}
+

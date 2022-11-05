@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 960px;
+	margin: auto;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+/*Course*/
+.course_title {
+	color: black;
+	font-size: 24px;
+	padding-top: 64px;
+	padding-bottom: 24px;
+	text-align: center;
+}
+
+.course_intro {
+	text-align: center;
+	padding-bottom: 64px;
+}
+
+.course_intro1 {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.course_intro1_left {
+	width: 100%;
+	height: auto;
+}
+
+.course_intro1_left img {
+	width: 100%;
+	box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+}
+
+.course_intro1_left img:hover {
+	animation-name: rotate;
+	animation-duration: 0.5s;
+}
+
+.course_intro1_right {
+	width: 100%;
+}
+
+.course_intro1_right h3 {
+	padding: 0px 48px 40px 48px;
+}
+
+.course_intro1_right p {
+	padding: 0px 48px 0px 48px;
+}
+
+
+
+
+.course_intro2 {
+	display: flex;
+	align-items: center;
+}
+
+.course_intro2_left {
+	width: 100%;
+}
+
+
+.course_intro2_right {
+
+	width: 100%;
+}
+
+
+.course_intro2_left h3 {
+	padding: 0px 48px 40px 48px;
+}
+
+.course_intro2_left p {
+	padding: 0px 48px 0px 48px;
+}
+
+
+
+.course_intro2_right img {
+	width: 100%;
+	box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+}
+
+.course_intro2_right img:hover {
+	animation-name: rotate;
+	animation-duration: 0.5s;
+}
+
+@keyframes rotate {
+	0% {
+	  transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(5deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	}
+  }
+
+
+
+.course_intro3 {
+	display: flex;
+	align-items: center;
+}
+
+.course_intro3_left {
+	width: 100%;
+}
+
+.course_intro3_right {
+
+	width: 100%;
+}
+
+.course_intro3_right h3 {
+	padding: 0px 48px 40px 48px;
+}
+
+.course_intro3_right p {
+	padding: 0px 48px 0px 48px;
+}
+
+
+.course_intro3_left img {
+	width: 100%;
+	box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+}
+
+.course_intro3_left img:hover {
+	animation-name: rotate;
+	animation-duration: 0.5s;
+}
